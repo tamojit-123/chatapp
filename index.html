@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">    <!-- Font Awesome -->
+    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="dist/css/adminlte.min.css">
+    <title>Chat</title>
+</head>
+<body>
+<div class="container col-md-4 mt-lg-4">
+    <div class="card card-widget widget-user">
+        <div class="widget-user-header bg-info">
+            <h3 class="widget-user-username">John Doe</h3>
+            <h5 class="widget-user-desc">Online</h5>
+        </div>
+        <div class="widget-user-image">
+            <img class="img-circle elevation-2" src="images/1.png" alt="User Avatar">
+        </div>
+        <div class="card-footer">
+            <div class="row">
+                <div class="col-sm-4 border-right">
+                    <div class="description-block">
+                        <h5 class="description-header">3K</h5>
+                        <span class="description-text">Facebook</span>
+                    </div>
+                </div>
+                <div class="col-sm-4 border-right">
+                    <div class="description-block">
+                        <h5 class="description-header">13K</h5>
+                        <span class="description-text">Tweeter</span>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="description-block">
+                        <h5 class="description-header">35K</h5>
+                        <span class="description-text">Instagram</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="card card-primary card-outline direct-chat direct-chat-primary">
+        <div class="card-header">
+            <h3 class="card-title">Chat App</h3>
+
+            <div class="card-tools">
+                <span title="3 New Messages" class="badge bg-primary">3</span>
+                <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                    <i class="fas fa-minus"></i>
+                </button>
+                <button type="button" class="btn btn-tool" title="Contacts" data-widget="chat-pane-toggle">
+                    <i class="fas fa-comments"></i>
+                </button>
+                <button type="button" class="btn btn-tool" data-card-widget="remove">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="direct-chat-messages">
+                <div class="direct-chat-msg">
+                    <div class="direct-chat-infos clearfix">
+                        <span class="direct-chat-name float-left">John Doe</span>
+                        <span class="direct-chat-timestamp float-right">18 Jul 2:00 pm</span>
+                    </div>
+                    <img class="direct-chat-img" src="images/1.png" alt="Message User Image">
+                    <div class="direct-chat-text">
+                        Hi! Jane how are you?
+                    </div>
+                </div>
+
+                <div class="direct-chat-msg right">
+                    <div class="direct-chat-infos clearfix">
+                        <span class="direct-chat-name float-right">Jane Doe</span>
+                        <span class="direct-chat-timestamp float-left">18 Jul 2:05 pm</span>
+                    </div>
+                    <img class="direct-chat-img" src="images/2.png" alt="Message User Image">
+                    <div class="direct-chat-text">
+                        I am fine John.
+                    </div>
+                </div>
+            </div>
+
+            <div class="direct-chat-contacts">
+                <ul class="contacts-list">
+                    <li>
+                        <a href="#">
+                            <img class="contacts-list-img" src="images/1.png" alt="User Avatar">
+
+                            <div class="contacts-list-info">
+                          <span class="contacts-list-name">
+                            Online
+                            <small class="contacts-list-date float-right">7/18/2021</small>
+                          </span>
+                                <span class="contacts-list-msg">Hi! Jane how are you?</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="card-footer">
+            <form action="#" method="post">
+                <div class="input-group">
+                    <input type="text" name="message" placeholder="Type Message ..." class="form-control">
+                    <span class="input-group-append">
+                      <button type="submit" class="btn btn-primary">Send</button>
+                    </span>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="plugins/jquery/jquery.min.js"></script>
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="dist/js/adminlte.min.js"></script>
+<script src="dist/js/demo.js"></script>
+</body>
+</html>
